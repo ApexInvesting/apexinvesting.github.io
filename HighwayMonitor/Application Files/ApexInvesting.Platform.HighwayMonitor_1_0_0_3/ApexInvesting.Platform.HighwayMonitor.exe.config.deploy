@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <configSections>
+    <section name="node" type="ApexInvesting.Platform.VehicleFramework.NodeConfig, ApexInvesting.Platform.Common" />
+    <section name="highway" type="ApexInvesting.Platform.VehicleFramework.HighwayConfig, ApexInvesting.Platform.Common" />
+    <sectionGroup name="userSettings" type="System.Configuration.UserSettingsGroup, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+      <section name="ApexInvesting.Platform.HighwayMonitor.Properties.Settings" type="System.Configuration.ClientSettingsSection, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" allowExeDefinition="MachineToLocalUser" requirePermission="false" />
+    </sectionGroup>
+  </configSections>
+  <node>
+    <!-- You need a unique NodeID. One should have been allocated to you in https://github.com/ApexInvesting/ApexInvesting.Platform/wiki/Highway-Nodes . If not - talk to BenT. -->
+    <identification nodeId="1" />
+  </node>
+  <highway>
+    <service publicAddress="_hway.ncal.apexinvesting.com" awsAddress="_hwayi.ncal.apexinvesting.com" />
+  </highway>
+  <startup>
+    <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.5" />
+  </startup>
+  <userSettings>
+    <ApexInvesting.Platform.HighwayMonitor.Properties.Settings>
+      <setting name="NodeId" serializeAs="String">
+        <value>0</value>
+      </setting>
+    </ApexInvesting.Platform.HighwayMonitor.Properties.Settings>
+  </userSettings>
+  <runtime>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <dependentAssembly>
+        <assemblyIdentity name="Newtonsoft.Json" publicKeyToken="30ad4fe6b2a6aeed" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-6.0.0.0" newVersion="6.0.0.0" />
+      </dependentAssembly>
+    </assemblyBinding>
+  </runtime>
+</configuration>

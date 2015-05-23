@@ -82,14 +82,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AT_NT_20130226.exe" size="1905664">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AT_NT_20130226.exe" size="1903104">
       <assemblyIdentity name="AT_NT_20130226" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>pq4dKkocRFKXMmnwKJkUYhB5C3E=</dsig:DigestValue>
+        <dsig:DigestValue>Jt8/gCeCrmb5bSE4pptGbBJ/6S4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
